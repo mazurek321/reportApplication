@@ -1,0 +1,68 @@
+nav
+{
+    height: 100vh;
+    width: fit-content;
+    /* box-shadow: 3px 0 3px var(--motive-color); */
+    text-align: center;
+    background: var(--dark-background);
+    position: fixed;
+    top:0;
+    left: 0;
+}
+
+nav header
+{
+    padding: 3em;
+    font-weight: bold;
+}
+
+nav > p
+{
+    background: var(--motive-color-active);
+    border-top: 2px solid var(--motive-color);
+    border-bottom: 2px solid var(--motive-color);
+    width: 100%;   
+    padding: 20px; 
+}
+
+nav ul
+{
+    list-style: none;
+    text-align: left;
+    padding: 0 10px;
+}
+
+nav ul li
+{
+    margin-top: 1.5em;
+}
+
+nav ul li .content
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul select
+{
+    width: 100px;
+}
+
+nav ul fieldset div
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+nav ul fieldset div span
+{
+    color: grey;
+    font-size: 14px;
+}
+
+
+
+

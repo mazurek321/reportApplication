@@ -1,0 +1,180 @@
+.dashboard {
+  padding: 24px;
+  display: grid;
+  gap: 24px;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.report-header
+{
+  justify-content: left !important;
+  gap: 10px;
+}
+
+.card {
+  border-radius: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  background: #fff;
+  padding: 16px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 16px;
+}
+
+.kpi-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.kpi-bar {
+  width: 6px;
+  height: 40px;
+  border-radius: 4px;
+  margin-right: 12px;
+}
+
+.kpi-text {
+  flex: 1;
+}
+
+.kpi-icon {
+  font-size: 22px;
+  margin-left: 12px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.kpi-icon img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  padding: 10px;
+}
+
+.kpi-icon.blue {
+  border: 2px solid #0088FE;
+  background: rgb(235, 235, 255);
+}
+
+.kpi-icon.green {
+  border: 2px solid #00C49F;
+  background: rgb(235, 255, 235);
+}
+
+.kpi-icon.yellow {
+  border: 2px solid orange;
+  background: rgb(255, 246, 235);
+}
+
+.kpi-icon.red {
+  border: 2px solid red;
+  background: rgb(255, 244, 244);
+}
+
+.kpi-bar.blue {
+  background-color: #0088FE;
+}
+
+.kpi-bar.green {
+  background-color: #00C49F;
+}
+
+.kpi-bar.yellow {
+  background-color: #FFBB28;
+}
+
+.kpi-bar.red {
+  background-color: #FF4D4D;
+}
+
+.kpi-label {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.kpi-value {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.kpi-value.growth {
+  color: #2e7d32;
+  font-size: 12px;
+  margin-bottom: 3px;
+}
+
+.charts-grid {
+  display: grid;
+  gap: 24px;
+  font-size: 12px;
+}
+
+.two-columns-right
+{
+  grid-template-columns: 1fr 2fr;
+}
+
+.two-columns
+{
+  grid-template-columns: 1fr 1fr;
+}
+
+.two-columns-left
+{
+  grid-template-columns: 2fr 1fr;
+}
+
+.three-columns
+{
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.chart-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.full-width {
+  grid-column: span 3;
+}
+
+.dashboard header
+{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.dashboard select
+{
+  background: var(--motive-color-active);
+  padding: 7px 0 7px 7px;
+  border-radius: 7px;
+  border: 2px solid blue;
+  color: blue;
+}
+
+h2 span
+{
+  font-weight: normal;
+  color: grey;
+  font-size: 12px;
+}
