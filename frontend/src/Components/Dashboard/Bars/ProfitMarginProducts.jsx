@@ -43,9 +43,9 @@ const ProfitMarginProducts = ({ filters, showDetails}) => {
                 <h2 className="chart-title">Top Profit Margin by Product</h2>
             </header>
             <ResponsiveContainer width="100%" height={250}>
-                <BarChart data={data}>
+                <BarChart data={data} margin={{ top: 20 }}>
                 <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="product" angle={8}  style={{ fontSize: 8 }}/>
+                <XAxis dataKey="product" angle={8}  style={{ fontSize: 8 }}  tick={{ fontSize: 12, dy: 5 }}/>
                 <YAxis unit="%" />
                 <Tooltip formatter={(value) => [`${value}%`, "Margin"]} />
                 <Bar dataKey="profitPercent">

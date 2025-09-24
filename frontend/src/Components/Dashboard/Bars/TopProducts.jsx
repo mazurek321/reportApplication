@@ -39,9 +39,9 @@ const TopProducts = ({ filters, showDetails}) => {
                     <h2 className="chart-title">Top Sell Products</h2>
                 </header>
                 <ResponsiveContainer width="100%" height={250}>
-                    <BarChart data={data} margin={{ top: 10 }}>
+                    <BarChart data={data} margin={{ top: 20 }}>
                         <CartesianGrid strokeDasharray="3 3" />
-                        <XAxis dataKey="product" interval={0} angle={10} />
+                        <XAxis dataKey="product" interval={0} angle={10}  tick={{ fontSize: 12, dy: 5 }}/>
                         <YAxis interval={0} tickFormatter={!showDetails && formatNumber} />
                         <Tooltip 
                             formatter={(value, name, props) => {

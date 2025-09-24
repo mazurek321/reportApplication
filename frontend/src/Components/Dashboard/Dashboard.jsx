@@ -49,7 +49,7 @@ const Dashboard = ({ filters, showDetails }) => {
           </span>
         </div>
         <div className="button">
-          <button>Generate report</button>
+          {/* <button>Generate report</button> */}
         </div>
       </header>
       <TopBar filters={filters} showDetails={showDetails}/>
